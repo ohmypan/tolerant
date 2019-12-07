@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/huahong-algorithm/huahong-algorithm.iml" filepath="$PROJECT_DIR$/huahong-algorithm/huahong-algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huahong-basic/huahong-basic.iml" filepath="$PROJECT_DIR$/huahong-basic/huahong-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tolerant.iml" filepath="$PROJECT_DIR$/.idea/tolerant.iml" />
+    </modules>
+  </component>
+</project>

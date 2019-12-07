@@ -54,6 +54,8 @@ public class Component {
 
 
     public static void main(String[] args) throws Exception {
-        countDownLatch();
+        //countDownLatch();
+        String msg = String.format("%s|%s|%s|%s","!","2","3","555");
+        System.out.println("330100D15600000500753CC8404DDC4D".substring(0,6));
     }
 }
