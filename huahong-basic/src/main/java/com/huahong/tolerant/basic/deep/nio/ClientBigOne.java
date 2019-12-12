@@ -1,12 +1,19 @@
 package com.huahong.tolerant.basic.deep.nio;
 
+import org.springframework.scheduling.concurrent.DefaultManagedAwareThreadFactory;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
+import java.nio.charset.Charset;
 import java.util.Iterator;
+import java.util.Scanner;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author pgz
@@ -23,7 +30,16 @@ public class ClientBigOne {
     private final static int port = 8086;
     private final static int BUF_SIZE = 10240;
     private static ByteBuffer byteBuffer = ByteBuffer.allocate(BUF_SIZE);
-
+    /**
+     * corePoolSize => 线程池核心线程数量
+     * maximumPoolSize => 线程池最大数量
+     * keepAliveTime => 空闲线程存活时间
+     * unit => 时间单位
+     * workQueue => 线程池所使用的缓冲队列
+     * threadFactory => 线程池创建线程使用的工厂
+     * handler => 线程池对拒绝任务的处理策略
+     */
+    private ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(1,1,24, TimeUnit.HOURS, new SynchronousQueue<>(),new DefaultManagedAwareThreadFactory());
     private void  initClient() throws IOException {
         this.selector = Selector.open();
         SocketChannel clientChannel = SocketChannel.open();
@@ -51,9 +67,16 @@ public class ClientBigOne {
             clientChannel.finishConnect();
         }
         clientChannel.configureBlocking(false);
+
+        poolExecutor.execute(()->{
+            Scanner scan = new Scanner(System.in);
+            while(scan.hasNextLine()) {
+
+            }
+        });
         String info = "服务端你好!!";
         byteBuffer.clear();
-        byteBuffer.put(info.getBytes("UTF-8"));
+        byteBuffer.put(info.getBytes(Charset.forName("utf-8")));
         byteBuffer.flip();
         clientChannel.write(byteBuffer);
         clientChannel.close();

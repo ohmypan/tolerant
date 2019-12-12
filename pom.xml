@@ -14,6 +14,7 @@
     <modules>
         <module>huahong-basic</module>
         <module>huahong-algorithm</module>
+        <module>huahong-join</module>
     </modules>
 	<properties>
         <java.version>1.8</java.version>
