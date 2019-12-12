@@ -67,19 +67,28 @@ public class ClientBigOne {
             clientChannel.finishConnect();
         }
         clientChannel.configureBlocking(false);
-
+        String initInfo = "建立连接!!!";
+        byteBuffer.clear();
+        byteBuffer.put(initInfo.getBytes(Charset.forName("utf-8")));
+        byteBuffer.flip();
+        clientChannel.write(byteBuffer);
         poolExecutor.execute(()->{
             Scanner scan = new Scanner(System.in);
             while(scan.hasNextLine()) {
-
+                String info = scan.nextLine();
+                byteBuffer.clear();
+                byteBuffer.put(info.getBytes(Charset.forName("utf-8")));
+                //将Buffer从写模式切换到读模式。调用flip()方法会将position设回0，并将limit设置成之前position的值
+                byteBuffer.flip();
+                try {
+                    clientChannel.write(byteBuffer);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
-        String info = "服务端你好!!";
-        byteBuffer.clear();
-        byteBuffer.put(info.getBytes(Charset.forName("utf-8")));
-        byteBuffer.flip();
-        clientChannel.write(byteBuffer);
-        clientChannel.close();
+
+//        clientChannel.close();
     }
 
     public void doRead(SelectionKey key) throws IOException {

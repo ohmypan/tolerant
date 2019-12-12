@@ -19,17 +19,17 @@ import java.util.Set;
 public class MiniServer {
     private final static int PORT = 8086;
     private final static int BUF_SIZE = 10240;
+
     public void initServer() throws Exception{
         ServerSocketChannel socketChannel = ServerSocketChannel.open();
         //将通道设置为非阻塞
         socketChannel.configureBlocking(false);
+        //绑定端口 默认localhost
         socketChannel.bind(new InetSocketAddress(PORT));
 
-        /**
-         *  创建一个选择器
-         */
+        //创建一个选择器
         Selector selector = Selector.open();
-
+        //将channel注册到selector中
         socketChannel.register(selector,SelectionKey.OP_ACCEPT);
 
 
