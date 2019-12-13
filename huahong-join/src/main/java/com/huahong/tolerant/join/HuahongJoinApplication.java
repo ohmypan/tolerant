@@ -27,11 +27,9 @@ public class HuahongJoinApplication {
             ps = rt.exec(strCmd);
             //等待子进程完成再往下执行。
             ps.waitFor();
-        } catch (IOException e1) {
+        } catch (IOException | InterruptedException e1) {
             e1.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }finally {
+        } finally {
             if(ps != null) {
                 //销毁子进程
                 ps.destroy();
