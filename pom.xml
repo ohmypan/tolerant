@@ -15,23 +15,31 @@
         <module>huahong-basic</module>
         <module>huahong-algorithm</module>
         <module>huahong-join</module>
+        <module>huahong-eureka</module>
+        <module>huahong-cloud</module>
     </modules>
 	<properties>
         <java.version>1.8</java.version>
 
 	</properties>
-    <repositories>
-        <repository>
-            <id>apache-staging</id>
-            <url>https://repository.apache.org/content/repositories/staging/</url>
-        </repository>
-    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 	<build>
 		<plugins>
 			<plugin>

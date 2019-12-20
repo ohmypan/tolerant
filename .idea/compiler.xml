@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="huahong-algorithm" />
         <module name="huahong-basic" />
+        <module name="huahong-cloud" />
+        <module name="huahong-eureka" />
         <module name="huahong-join" />
         <module name="tolerant" />
       </profile>
@@ -15,6 +17,8 @@
     <bytecodeTargetLevel>
       <module name="huahong-algorithm" target="1.8" />
       <module name="huahong-basic" target="1.8" />
+      <module name="huahong-cloud" target="1.8" />
+      <module name="huahong-eureka" target="1.8" />
       <module name="huahong-join" target="1.8" />
       <module name="tolerant" target="1.8" />
     </bytecodeTargetLevel>
@@ -23,6 +27,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="huahong-algorithm" options="-parameters" />
       <module name="huahong-basic" options="-parameters" />
+      <module name="huahong-cloud" options="-parameters" />
+      <module name="huahong-eureka" options="-parameters" />
       <module name="huahong-join" options="-parameters" />
       <module name="tolerant" options="-parameters" />
     </option>
