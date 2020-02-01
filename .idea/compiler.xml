@@ -25,12 +25,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="huahong-algorithm" options="-parameters" />
-      <module name="huahong-basic" options="-parameters" />
-      <module name="huahong-cloud" options="-parameters" />
-      <module name="huahong-eureka" options="-parameters" />
-      <module name="huahong-join" options="-parameters" />
-      <module name="tolerant" options="-parameters" />
+      <module name="huahong-algorithm" options="" />
+      <module name="huahong-basic" options="" />
+      <module name="huahong-cloud" options="" />
+      <module name="huahong-eureka" options="" />
+      <module name="huahong-join" options="" />
+      <module name="tolerant" options="" />
     </option>
   </component>
 </project>
