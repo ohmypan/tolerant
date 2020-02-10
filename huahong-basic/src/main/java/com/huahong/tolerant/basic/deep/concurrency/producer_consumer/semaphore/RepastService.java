@@ -10,7 +10,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * Title:  <br>
  * Description: <br>
  * Company: wondersgroup.com <br>
- *
  * @author 潘国忠
  * @version 1.0
  */
@@ -84,7 +83,6 @@ public class RepastService {
             }
             for(int i=0;i<producePosition.length;i++){
                 if(producePosition[i] != null){
-
                     System.out.println(Thread.currentThread().getName() + "消费了" + producePosition[i]);
                     producePosition[i] = null;
                     break;
