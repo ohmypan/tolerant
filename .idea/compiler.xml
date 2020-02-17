@@ -14,7 +14,7 @@
         <module name="tolerant" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="huahong-algorithm" target="1.8" />
       <module name="huahong-basic" target="1.8" />
       <module name="huahong-cloud" target="1.8" />
