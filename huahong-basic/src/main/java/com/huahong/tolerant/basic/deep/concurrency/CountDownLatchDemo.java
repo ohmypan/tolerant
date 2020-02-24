@@ -3,6 +3,8 @@ package com.huahong.tolerant.basic.deep.concurrency;
 import org.junit.Test;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * File：CountDownLatchDemo <br>
@@ -17,10 +19,19 @@ import java.util.concurrent.CountDownLatch;
 public class CountDownLatchDemo {
 
     @Test
-    public void countDemo(){
-        CountDownLatch cdl = new CountDownLatch(3);
+    public void countDemo() throws InterruptedException{
+        int count = 10;
+        CountDownLatch cdl = new CountDownLatch(count);
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        for (int i = 0; i< count; i++){
+            executorService.execute(()-> {
+                System.out.println("run");
+                cdl.countDown();
+            });
 
-
-        cdl.countDown();
+        }
+        cdl.await();
+        System.out.println("End");
+        executorService.shutdown();
     }
 }
