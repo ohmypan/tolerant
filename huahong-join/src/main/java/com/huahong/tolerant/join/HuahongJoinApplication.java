@@ -11,11 +11,13 @@ import java.io.IOException;
 @SpringBootApplication
 public class HuahongJoinApplication {
 
+
     public static void main(String[] args) {
-        runCmd("cmd /c start D:\\code\\tolerant\\huahong-join\\src\\main\\java\\com\\huahong" +
-                "\\tolerant\\join\\bat\\startKafka.bat");
-        runCmd("cmd /c start D:\\code\\tolerant\\huahong-join\\src\\main\\java\\com\\huahong" +
-                "\\tolerant\\join\\bat\\startZookeeper.bat");
+
+//        runCmd("cmd /c start D:\\code\\tolerant\\huahong-join\\src\\main\\java\\com\\huahong" +
+//                "\\tolerant\\join\\bat\\startKafka.bat");
+//        runCmd("cmd /c start D:\\code\\tolerant\\huahong-join\\src\\main\\java\\com\\huahong" +
+//                "\\tolerant\\join\\bat\\startZookeeper.bat");
         SpringApplication.run(HuahongJoinApplication.class, args);
     }
 
