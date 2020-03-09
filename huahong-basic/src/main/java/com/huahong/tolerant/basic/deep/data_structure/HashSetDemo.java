@@ -20,5 +20,6 @@ public class HashSetDemo {
     public void getHash(){
         HashSet<String> set = new HashSet<>();
         set.add("new");
+        set.add(null);
     }
 }

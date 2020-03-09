@@ -13,9 +13,19 @@ spring:
     password: 123456
     port: 6379
     database: 0
-    database1:1
     jedis:
       pool:
         max-active: 8
         max-idle: 8
         min-idle: 0
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    # 打印sql, 方便调试
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    use-generated-keys: true
+    default-statement-timeout: 60
+    #interceptors: com.huahong.tolerant.join.interceptor.mybatis.SqlStatementInterceptor
+  type-aliases-package: com.huahong.tolerant.join.domain
+ # config-location: classpath*:/config/mybatis-config.xml

@@ -20,6 +20,7 @@ public class HashTableDemo {
     public void tableDemo(){
         Hashtable<String,Object> table = new Hashtable<>(16);
         table.put("11",222);
+        table.put(null,"null");
         System.out.println(table);
     }
 }

@@ -3,7 +3,6 @@ package com.huahong.tolerant.join.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
@@ -22,14 +21,11 @@ import redis.clients.jedis.JedisPoolConfig;
  * @author 潘国忠
  * @version 1.0
  */
-@Configuration
+
 public class RedisTemplateConfig {
     /** redis数据库*/
     @Value("${spring.redis.database}")
     private int redisDatabase;
-    /** redis数据库1*/
-    @Value("${spring.redis.database1}")
-    private int redis1Database;
     /** redis数据库ip*/
     @Value("${spring.redis.host}")
     private String redisHost;
@@ -43,10 +39,7 @@ public class RedisTemplateConfig {
         return buildRedisTemplate(buildConnectionFactory(jedisPoolConfig(),redisDatabase));
     }
 
-    @Bean(name = "redisTemplate1")
-    public StringRedisTemplate redisTemplate1() {
-        return buildRedisTemplate(buildConnectionFactory(jedisPoolConfig(),redis1Database));
-    }
+
 
 
     protected StringRedisTemplate buildRedisTemplate(RedisConnectionFactory connectionFactory) {
