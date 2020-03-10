@@ -15,6 +15,6 @@ import org.springframework.beans.factory.annotation.Value;
  */
 @Data
 public class IocObject {
-    @Value("111")
+    @Value(value = "111")
     private String str;
 }
