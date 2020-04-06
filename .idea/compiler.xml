@@ -11,6 +11,7 @@
         <module name="huahong-cloud" />
         <module name="huahong-eureka" />
         <module name="huahong-join" />
+        <module name="huahong-orm" />
         <module name="tolerant" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="huahong-cloud" target="1.8" />
       <module name="huahong-eureka" target="1.8" />
       <module name="huahong-join" target="1.8" />
+      <module name="huahong-orm" target="1.8" />
       <module name="tolerant" target="1.8" />
     </bytecodeTargetLevel>
   </component>

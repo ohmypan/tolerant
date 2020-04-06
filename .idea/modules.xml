@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/huahong-cloud/huahong-cloud.iml" filepath="$PROJECT_DIR$/huahong-cloud/huahong-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/huahong-eureka/huahong-eureka.iml" filepath="$PROJECT_DIR$/huahong-eureka/huahong-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/huahong-join/huahong-join.iml" filepath="$PROJECT_DIR$/huahong-join/huahong-join.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huahong-orm/huahong-orm.iml" filepath="$PROJECT_DIR$/huahong-orm/huahong-orm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tolerant.iml" filepath="$PROJECT_DIR$/.idea/tolerant.iml" />
     </modules>
   </component>
