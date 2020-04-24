@@ -11,6 +11,10 @@
         <option value="$PROJECT_DIR$/huahong-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/huahong-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/huahong-orm/pom.xml" />
+        <option value="$PROJECT_DIR$/huahong-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/huahong-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/huahong-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/huahong-dubbo/pom.xml" />
         <option value="$PROJECT_DIR$/huahong-server/pom.xml" />
       </list>
     </option>

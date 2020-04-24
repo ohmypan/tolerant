@@ -9,11 +9,14 @@
         <module name="huahong-algorithm" />
         <module name="huahong-basic" />
         <module name="huahong-cloud" />
+        <module name="huahong-consumer" />
+        <module name="huahong-dubbo" />
         <module name="huahong-eureka" />
         <module name="huahong-join" />
         <module name="huahong-orm" />
-        <module name="huahong-server" />
-        <module name="orm" />
+        <module name="huahong-provider" />
+        <module name="huahong-ribbon" />
+        <module name="server" />
         <module name="tolerant" />
       </profile>
     </annotationProcessing>
@@ -21,23 +24,25 @@
       <module name="huahong-algorithm" target="1.8" />
       <module name="huahong-basic" target="1.8" />
       <module name="huahong-cloud" target="1.8" />
+      <module name="huahong-consumer" target="1.8" />
+      <module name="huahong-dubbo" target="1.8" />
       <module name="huahong-eureka" target="1.8" />
       <module name="huahong-join" target="1.8" />
       <module name="huahong-orm" target="1.8" />
-      <module name="huahong-server" target="1.8" />
-      <module name="orm" target="1.5" />
+      <module name="huahong-provider" target="1.8" />
+      <module name="huahong-ribbon" target="1.8" />
+      <module name="server" target="1.8" />
       <module name="tolerant" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="huahong-algorithm" options="-parameters" />
-      <module name="huahong-basic" options="-parameters" />
-      <module name="huahong-cloud" options="-parameters" />
-      <module name="huahong-eureka" options="-parameters" />
-      <module name="huahong-join" options="-parameters" />
-      <module name="huahong-server" options="-parameters" />
-      <module name="tolerant" options="-parameters" />
+      <module name="huahong-algorithm" options="" />
+      <module name="huahong-basic" options="" />
+      <module name="huahong-cloud" options="" />
+      <module name="huahong-eureka" options="" />
+      <module name="huahong-join" options="" />
+      <module name="tolerant" options="" />
     </option>
   </component>
 </project>

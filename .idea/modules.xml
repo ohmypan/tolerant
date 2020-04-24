@@ -5,11 +5,14 @@
       <module fileurl="file://$PROJECT_DIR$/huahong-algorithm/huahong-algorithm.iml" filepath="$PROJECT_DIR$/huahong-algorithm/huahong-algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/huahong-basic/huahong-basic.iml" filepath="$PROJECT_DIR$/huahong-basic/huahong-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/huahong-cloud/huahong-cloud.iml" filepath="$PROJECT_DIR$/huahong-cloud/huahong-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huahong-consumer/huahong-consumer.iml" filepath="$PROJECT_DIR$/huahong-consumer/huahong-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huahong-dubbo/huahong-dubbo.iml" filepath="$PROJECT_DIR$/huahong-dubbo/huahong-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/huahong-eureka/huahong-eureka.iml" filepath="$PROJECT_DIR$/huahong-eureka/huahong-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/huahong-join/huahong-join.iml" filepath="$PROJECT_DIR$/huahong-join/huahong-join.iml" />
       <module fileurl="file://$PROJECT_DIR$/huahong-orm/huahong-orm.iml" filepath="$PROJECT_DIR$/huahong-orm/huahong-orm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/huahong-server/huahong-server.iml" filepath="$PROJECT_DIR$/huahong-server/huahong-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/huahong-orm/orm.iml" filepath="$PROJECT_DIR$/huahong-orm/orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huahong-provider/huahong-provider.iml" filepath="$PROJECT_DIR$/huahong-provider/huahong-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huahong-ribbon/huahong-ribbon.iml" filepath="$PROJECT_DIR$/huahong-ribbon/huahong-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huahong-server/server.iml" filepath="$PROJECT_DIR$/huahong-server/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tolerant.iml" filepath="$PROJECT_DIR$/.idea/tolerant.iml" />
     </modules>
   </component>
