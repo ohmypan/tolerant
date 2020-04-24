@@ -1,11 +1,11 @@
-package com.huahong.tolerant.cloud;
+package com.huahong.tolerant.server;
 
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class HuahongCloudApplicationTests {
+public class ServerApplicationTests {
 
     @Test
     public void contextLoads() {
